@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1366.0" style="-fx-background-color: #edf8fd;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetjava_s5.controllers.GestionClasseController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="86.0" prefHeight="99.0" prefWidth="586.0" text="Gestion des Classes" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Cambria" size="64.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="120.0" layoutY="210.0" prefHeight="87.0" prefWidth="275.0" text="Libelle :">
+         <font>
+            <Font name="Cambria" size="55.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_libelle" layoutX="363.0" layoutY="229.0" prefHeight="50.0" prefWidth="450.0" />
+      <TableView fx:id="tv_classe" layoutX="24.0" layoutY="307.0" prefHeight="320.0" prefWidth="1152.0">
+        <columns>
+          <TableColumn fx:id="tv_id" prefWidth="321.0" text="id" />
+          <TableColumn fx:id="tv_libelle" prefWidth="830.0" text="libelle" />
+        </columns>
+      </TableView>
+      <BorderPane layoutX="-2.0" prefHeight="76.0" prefWidth="1370.0" style="-fx-background-color: #1b75b4; -fx-opacity: 0.6;" />
+      <Button fx:id="btn_ajouter" layoutX="951.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleAjouterClasse" prefHeight="65.0" prefWidth="137.0" style="-fx-background-color: #1ed760; -fx-border-radius: 100%;" text="Creer">
+         <font>
+            <Font name="Cambria Bold" size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_home" layoutX="27.0" layoutY="3.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handlechangeViewHome" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_GC" layoutX="277.0" layoutY="3.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handlechangeViewClasse" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Gestion Classe" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_GestionProf" layoutX="535.0" layoutY="2.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handleChangeViewProfesseur" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Gestion Professeur" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_List_prof" layoutX="795.0" layoutY="2.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handleChangeViewListe" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Lister Professeur " textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_G_Etudiant" layoutX="1080.0" layoutY="2.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handleChangeViewEtudiant" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Gestion Etudiant" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_exit" layoutX="1170.0" layoutY="650.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="43.0" prefWidth="188.0" style="-fx-background-radius: 5px; -fx-background-color: #dc1f1f;" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold Italic" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

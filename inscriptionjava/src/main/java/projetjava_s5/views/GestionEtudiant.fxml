@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1366.0" style="-fx-background-color: #eaf8fc;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetjava_s5.controllers.GestionEtudiantController">
+   <children>
+      <ComboBox fx:id="cmbx_classeFilter" layoutX="576.0" layoutY="180.0" prefHeight="25.0" prefWidth="175.0" />
+      <Label layoutX="85.0" layoutY="301.0" text="Année:">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="304.0" text="Classe:">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_ok" layoutX="647.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleSearchOk" prefHeight="21.0" prefWidth="84.0" style="-fx-background-color: #1dd75f; -fx-background-radius: 7px;" text="OK">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="462.0" layoutY="167.0" text="Classe:">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="117.0" text="Année:">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_annee" layoutX="581.0" layoutY="129.0" prefHeight="2.0" prefWidth="170.0" />
+      <Label layoutX="56.0" layoutY="167.0" text="Nom:">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="115.0" text="Numero:">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="218.0" text="Prenom:">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nom" layoutX="153.0" layoutY="181.0" prefHeight="26.0" prefWidth="197.0" />
+      <TextField fx:id="txt_numero" layoutX="200.0" layoutY="131.0" prefHeight="21.0" prefWidth="169.0" />
+      <TextField fx:id="txt_prenom" layoutX="197.0" layoutY="231.0" prefHeight="19.0" prefWidth="169.0" />
+      <ComboBox fx:id="cmb_classe_filter" layoutX="438.0" layoutY="306.0" prefHeight="23.0" prefWidth="183.0" />
+      <TextField fx:id="txt_anneeFilter" layoutX="166.0" layoutY="307.0" prefHeight="2.0" prefWidth="170.0" />
+      <Button fx:id="btn_ok" layoutX="805.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleInscription" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #1dd75f;" text="S'inscrire">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Button>
+      <BorderPane prefHeight="76.0" prefWidth="1370.0" style="-fx-background-color: #1b75b4; -fx-opacity: 0.6;" />
+      <Button fx:id="btn_home" layoutX="37.0" layoutY="9.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handlechangeViewHome" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_Gestion_Classe" layoutX="287.0" layoutY="12.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handlechangeViewClasse" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Gestion Classe" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_GestionProf" layoutX="545.0" layoutY="11.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handleChangeViewProfesseur" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Gestion Professeur" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_List_prof" layoutX="805.0" layoutY="11.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handleChangeViewListe" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Lister Professeur " textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_G_Etudiant" layoutX="1090.0" layoutY="11.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#handleChangeViewEtudiant" prefHeight="50.0" prefWidth="225.0" style="-fx-background-color: #134281; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-hgap: 20px; -fx-border-color: #004058; -fx-background-radius: 10px;" text="Gestion des Etudiant" textFill="WHITE">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tv_stud" layoutX="2.0" layoutY="371.0" prefHeight="316.0" prefWidth="1124.0">
+        <columns>
+          <TableColumn fx:id="tv_num" prefWidth="108.0" text="Numero" />
+          <TableColumn fx:id="tv_name" minWidth="0.0" prefWidth="200.0" text="Nom" />
+            <TableColumn fx:id="tv_prenom" minWidth="0.0" prefWidth="294.0" text="Prenom" />
+            <TableColumn fx:id="tv_year" minWidth="0.0" prefWidth="238.0" text="Année" />
+            <TableColumn fx:id="tvc_classe" minWidth="0.0" prefWidth="281.0" text="Classe" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_exit" layoutX="1226.0" layoutY="642.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="60.0" prefWidth="136.0" style="-fx-background-radius: 5px; -fx-background-color: #dc1f1f;" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="462.0" layoutY="217.0" text="Tuteur:">
+         <font>
+            <Font name="Cambria" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_tuteur" layoutX="577.0" layoutY="232.0" prefHeight="25.0" prefWidth="168.0" />
+   </children>
+</AnchorPane>
